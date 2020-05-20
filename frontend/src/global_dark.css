@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font: 400 14px Lato, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+input, button, textarea {
+
+    font: 400 17px Lato, sans-serif;
+
+}
+
+button {
+
+    cursor: pointer;
+
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+
+    border: 1px solid #353535;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    width: 85%;
+    background: #212121;
+    text-align: center;
+
+}
+
+input[type=submit] {
+
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    width: 85%;
+    background: #FF009D;
+    color: white;
+    font-weight: bold;
+    font-size: 17.1429px;
+    line-height: 21px;
+
+}
+
+.bg_353535{
+
+    background: #353535;
+
+}
+
+.color_acacac {
+
+    color: #acacac
+
+}
