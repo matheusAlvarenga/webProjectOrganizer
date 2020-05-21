@@ -6,6 +6,7 @@ import { FiPlus, FiChevronDown, FiGrid, FiMenu } from 'react-icons/fi';
 import Header from '../header';
 import AsideMenu from '../aside_menu';
 import NewFolder from '../new_folder';
+import ShareFolder from '../share_folder';
 
 import './style.css';
 
@@ -13,14 +14,14 @@ import Photo1 from '../../assets/item-photo.jpg';
 import Photo2 from '../../assets/item-photo2.jpg';
 import Photo3 from '../../assets/item-photo3.jpg';
 
-export default function Login() {
+export default function Projects() {
 
     return (
     <div className="content">
         <Header />
         <AsideMenu />
 
-        <NewFolder />
+        <ShareFolder />
 
         <div className="projects-container">
 
@@ -82,7 +83,7 @@ export default function Login() {
 
                         <div className="foto">
 
-                            <img src={Photo1} alt="Foto do Projeto" />
+                            <img src={Photo2} alt="Foto do Projeto" />
 
                         </div>
 
@@ -103,7 +104,7 @@ export default function Login() {
 
                         <div className="foto">
 
-                            <img src={Photo1} alt="Foto do Projeto" />
+                            <img src={Photo3} alt="Foto do Projeto" />
 
                         </div>
 
