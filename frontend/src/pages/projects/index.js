@@ -5,6 +5,7 @@ import { FiPlus, FiChevronDown, FiGrid, FiMenu } from 'react-icons/fi';
 
 import Header from '../header';
 import AsideMenu from '../aside_menu';
+import NewFolder from '../new_folder';
 
 import './style.css';
 
@@ -18,6 +19,8 @@ export default function Login() {
     <div className="content">
         <Header />
         <AsideMenu />
+
+        <NewFolder />
 
         <div className="projects-container">
 
@@ -51,27 +54,6 @@ export default function Login() {
             <div className="list">
 
                 <ul>
-
-                <li>
-
-<div className="item">
-
-    <div className="foto">
-
-        <img src={Photo1} alt="Foto do Projeto" />
-
-    </div>
-
-    <div className="footer">
-
-        <h1>GlassPlastic</h1>
-        <p>20/04/2001</p>
-
-    </div>
-
-</div>
-
-</li>
 
                     <li>
 
