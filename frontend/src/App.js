@@ -2,13 +2,13 @@ import React from 'react';
 
 // IMPORT PAGES
 
-import Login from './pages/login'
+import Routes from './routes.js'
 
 import './global_dark.css';
 
 function App() {
   return (
-    <Login ></Login>
+    <Routes />
   );
 }
 

@@ -66,22 +66,3 @@ body{
     margin-top: 19px;
 
 }
-
-.login-container a {
-
-    font-size: 16.3057px;
-    line-height: 20px;
-    text-align: center;
-    margin-bottom: 7px;
-    color: #FFFFFF;
-    text-decoration: underline;
-
-    transition: color 0.3s;
-
-}
-
-.login-container a:hover {
-
-    color: #FF009D;
-
-}
