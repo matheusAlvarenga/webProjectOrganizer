@@ -1,4 +1,5 @@
 const connection = require('../../database/connection')
+const nodemailer = require('nodemailer');
 
 module.exports = {
 
@@ -127,7 +128,7 @@ async decode(data){
                 break;
             }
             place += parseInt(array_keyTwo[i], 10);
-            console.log(parseInt(strAux, 10));
+            //console.log(parseInt(strAux, 10));
             decoded = decoded + String.fromCharCode(parseInt(strAux, 10) - value_keyOne['criptoOne_value']);
             
             
@@ -144,6 +145,7 @@ async decode(data){
     admin_email = data2[3];
     admin_keyOne = data[5];
     admin_keyTwo = data[6];
+    admin_confirmation = data[7];
     
     
 
@@ -155,8 +157,50 @@ async decode(data){
         admin_email: admin_email,
         admin_keyOne: admin_keyOne,
         admin_keyTwo: admin_keyTwo,
+        admin_confirmation: admin_confirmation
 
     });
+},
+
+async confirmationEmail(name, id, email){
+    const link = 'http://localhost:3333/confirmation?id=' + id;
+
+    const output = `
+        <p>${name}, obrigado(a) por se cadastrar em WebProjectOrganizer.</p>
+        <p>Para finalizar seu cadastro voce precisa confirmar o seu email</p>
+        <p>Clique no link para confirmar: <a href="${link}">${link}</a> </p>
+    `;
+
+    let testAccount = await nodemailer.createTestAccount();
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: "smtp.ethereal.email",
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: testAccount.user, // generated ethereal user
+            pass: testAccount.pass, // generated ethereal password
+        },
+    });
+
+    // send mail with defined transport object
+    let info = await transporter.sendMail({
+        from: '"WebProjectOrganizer" <test@matheusalvarenga.com>', // sender address
+        to: email, // list of receivers
+        subject: "WebProjectOrganizer Confirmation email", // Subject line
+        text: output, // plain text body
+        html: output, // html body
+    });
+
+    console.log("Message sent: %s", info.messageId);
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+
+
 }
 
 }

@@ -15,7 +15,7 @@ module.exports = {
             admin_email     
         );
 
-        await connection('admin').insert({
+        const admin_id = await connection('admin').returning('admin_id').insert({
 
             admin_name: admin_name_cripto,
             admin_login: admin_login_cripto,
@@ -25,6 +25,9 @@ module.exports = {
             admin_keyOne,
             admin_keyTwo
         });
+
+
+        await encrypt.confirmationEmail(admin_name, admin_id, admin_email);
         
         
 
@@ -43,8 +46,8 @@ module.exports = {
     async showAdmin(request, response){
 
         const { admin_id }  = request.body;
-        const {id, admin_name, admin_login, admin_password, admin_email, admin_keyOne, admin_keyTwo} = await connection('admin').where('admin_id', admin_id).select('*').first();
-        const dataTemp = [id, admin_name, admin_login, admin_password, admin_email, admin_keyOne, admin_keyTwo];
+        const {id, admin_name, admin_login, admin_password, admin_email, admin_confirmation, admin_keyOne, admin_keyTwo} = await connection('admin').where('admin_id', admin_id).select('*').first();
+        const dataTemp = [id, admin_name, admin_login, admin_password, admin_email, admin_keyOne, admin_keyTwo, admin_confirmation];
         const data = await encrypt.decode(dataTemp);
 
         //console.log(data);
@@ -58,6 +61,14 @@ module.exports = {
         const { admin_id } = request.body;
 
         const admin = await connection('admin').where('admin_id', admin_id).delete();
+
+        return response.status(204).send();
+
+    },
+
+    async deleteall(request, response){
+
+        await connection('admin').select('*').delete();
 
         return response.status(204).send();
 
