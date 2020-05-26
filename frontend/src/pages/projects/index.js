@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FiPlus, FiChevronDown, FiGrid, FiMenu } from 'react-icons/fi';
@@ -6,7 +6,6 @@ import { FiPlus, FiChevronDown, FiGrid, FiMenu } from 'react-icons/fi';
 import Header from '../header';
 import AsideMenu from '../aside_menu';
 import NewFolder from '../new_folder';
-import ShareFolder from '../share_folder';
 
 import './style.css';
 
@@ -16,12 +15,12 @@ import Photo3 from '../../assets/item-photo3.jpg';
 
 export default function Projects() {
 
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
     return (
     <div className="content">
-        <Header />
+        <Header onClicked={() => setIsModalVisible(true)} />
         <AsideMenu />
-
-        <ShareFolder />
 
         <div className="projects-container">
 

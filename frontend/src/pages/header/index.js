@@ -31,7 +31,7 @@ export default function Login() {
 
                 <Link to="../shareFolder"><FiShare2/></Link>
                 <p>|</p>
-                <Link to="../newFolder"><FiFolderPlus/></Link>
+                <FiFolderPlus onClick={this.props.onClicked} />
                 <p>|</p>
                 <Link to="../newFile"><FiFilePlus/></Link>
 
