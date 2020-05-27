@@ -1,6 +1,14 @@
+.center {
+
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+}
+
 .share-container {
 
-    height: 160px;
+    height: 180px;
     width: 420px;
 
     display: flex;
@@ -17,7 +25,7 @@
     left:50%;
     margin-left: -105px;
     top: 50%;
-    margin-top: -80px;
+    margin-top: -90px;
 
 }
 
@@ -62,5 +70,23 @@
 .share-container form input + input{
 
     width: 30%;
+
+}
+
+.share-container .close {
+
+    width: 100%;
+
+}
+
+.share-container .close p{
+
+    cursor: pointer;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
 
 }

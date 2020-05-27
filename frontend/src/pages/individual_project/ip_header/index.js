@@ -4,7 +4,7 @@ import { FiArrowLeftCircle, FiShare2, FiFolderPlus, FiFilePlus } from 'react-ico
 
 import './style.css';
 
-import logoWpo from '../../assets/logo_wpo.svg';
+import logoWpo from '../../../assets/logo_wpo.svg';
 
 export default function Login() {
 

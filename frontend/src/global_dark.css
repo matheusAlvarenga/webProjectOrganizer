@@ -94,3 +94,9 @@ input[type=submit] {
     color: #acacac
 
 }
+
+.pointer {
+
+    cursor: pointer;
+
+}
