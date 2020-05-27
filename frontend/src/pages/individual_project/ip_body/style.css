@@ -1,0 +1,164 @@
+body{
+
+    background: url('../../../assets/background-project-page.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.projects-container {
+
+    margin-left: 20%;
+    padding-top: 84px;
+    padding-right: 52px;
+    width: 80%;
+
+}
+
+.projects-container .projects-actions {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.projects-container .projects-actions .selector {
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.projects-container .projects-actions .selector p {
+
+    font-size: 15px;
+    
+
+}
+
+.projects-container .projects-actions .selector svg {
+
+    font-size: 15px;
+    margin-left: 7px;
+
+}
+
+.projects-container .viewmode {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.projects-container .viewmode .view {
+
+    width: 26px;
+    height: 26px;
+    background: #D7D7D7;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+
+}
+
+.projects-container .viewmode .view svg {
+
+    font-size: 16px;
+    margin-left: 1px;
+
+}
+
+.projects-container .list {
+
+    margin-top: 25px;
+
+}
+
+.projects-container .list ul{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+    list-style: none;
+
+}
+
+.projects-container .list ul li .item{
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects-container .list ul li .item .foto img{
+
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+
+}
+
+.projects-container .list ul li .footer {
+
+    margin-top: -3px;
+    width: 100%;
+    height: 38px;
+    background: #FF009D;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.projects-container .list ul li .footer h1{
+
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.projects-container .list ul li .footer p{
+
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+
+}
+
+.addfile {
+
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+
+}
+
+.addfile .circle {
+
+    width: 70px;
+    height: 70px;
+    background: #FF009D;
+    border: 3px solid #FFFFFF;
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addfile .circle svg {
+
+    font-size: 50px;
+
+}
+
