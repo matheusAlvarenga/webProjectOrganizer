@@ -2,13 +2,19 @@ import React from 'react';
 
 import './style.css';
 
-export default function NewFolder() {
+export default function NewFolder(onClose= () => {}) {
 
     return (
     
         <div className="center">
 
             <div className="folder-container">
+
+                <div className="close">
+
+                    <p onClick={() => onClose}>X</p>
+
+                </div>
 
                 <div className="title">
 

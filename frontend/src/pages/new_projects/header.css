@@ -1,0 +1,97 @@
+.header-container{
+
+    position: fixed;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    background: #353535;
+    border: 1px solid #000000;
+
+}
+
+.header-container .logo {
+
+    background: #212121;
+    width: 16%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-container .logo img{
+
+    height: 55px;
+
+}
+
+.header-container .body{
+
+    display: flex;
+    width: 84%;
+
+}
+
+.header-container .body .title {
+
+    margin-left: 50px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header-container .body .title svg{
+
+    color: white;
+    font-size: 28px;
+    -webkit-text-stroke: 2px white;
+    margin-right: 10px;
+
+}
+
+.header-container .body .title p {
+
+    margin-left: 8px;
+    color: white;
+
+}
+
+.header-container .body .title .proj {
+
+    font-size: 20px;
+
+}
+
+.header-container .body .title .folder {
+
+    font-size: 24px;
+    margin-bottom: 5px;
+
+}
+
+.header-container .body .actions {
+
+    position: absolute;
+    right: 50px;
+    margin-top: 1px;
+    display: flex;
+
+    align-items: center;
+    justify-content: right;
+
+}
+
+.header-container .body .actions p, .header-container .body .actions svg{
+
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+
+}

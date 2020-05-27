@@ -53,6 +53,21 @@ input[type=text], input[type=password], input[type=email], input[type=number] {
 
 }
 
+button[type=submit] {
+
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    width: 85%;
+    background: #FF009D;
+    color: white;
+    font-weight: bold;
+    font-size: 17.1429px;
+    line-height: 21px;
+
+}
+
 input[type=submit] {
 
     border: 0;
