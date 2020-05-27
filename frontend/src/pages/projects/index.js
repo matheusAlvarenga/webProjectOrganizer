@@ -24,7 +24,7 @@ export default function Projects() {
     return (
     <div className="content">
 
-        {isModalVisible ? <NewFolder onClose={() => console.log('top')} /> : null}
+        {isModalVisible ? <NewFolder onClose={() => setIsModalVisible(false)} /> : null} 
 
         <header className="header-container">
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-export default function NewFolder(onClose= () => {}) {
+export default function NewFolder(onClose=() => {}) {
 
     return (
     
@@ -12,7 +12,7 @@ export default function NewFolder(onClose= () => {}) {
 
                 <div className="close">
 
-                    <p onClick={() => onClose}>X</p>
+                    <p onClose>X</p>
 
                 </div>
 
