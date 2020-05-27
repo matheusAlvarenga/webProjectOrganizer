@@ -7,6 +7,7 @@ import Header from '../header';
 import AsideMenu from '../aside_menu';
 import NewFolder from '../new_folder';
 import Search from '../search';
+import ShareFolder from '../share_folder';
 
 import './style.css';
 import './header.css';
@@ -20,11 +21,15 @@ import Photo3 from '../../assets/item-photo3.jpg';
 export default function Projects() {
 
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isModalVisible2, setIsModalVisible2] = useState(false);
+    const [isModalVisible3, setIsModalVisible3] = useState(false);
 
     return (
     <div className="content">
 
-        {isModalVisible ? <NewFolder onClose={() => console.log('top')} /> : null}
+        {isModalVisible ? <NewFolder onCse={ () => setIsModalVisible(false) } /> : null}
+        {isModalVisible2 ? <Search onCse={ () => setIsModalVisible2(false) } /> : null}
+        {isModalVisible3 ? <ShareFolder onCse={ () => setIsModalVisible3(false) } /> : null}
 
         <header className="header-container">
 
@@ -38,7 +43,7 @@ export default function Projects() {
 
                 <div className="title">
 
-                    <FiArrowLeftCircle />
+                    <FiArrowLeftCircle className="pointer" />
                     <p className="proj">Projects /</p>
                     <p className="folder">Projeto Para Fazer</p>
 
@@ -46,11 +51,11 @@ export default function Projects() {
 
                 <div className="actions">
 
-                    <Link to="../shareFolder"><FiShare2/></Link>
+                    <FiShare2 className="pointer" onClick={() => setIsModalVisible3(true) } />
                     <p>|</p>
-                    <FiFolderPlus onClick={() => setIsModalVisible(true) } />
+                    <FiFolderPlus className="pointer" onClick={() => setIsModalVisible(true) } />
                     <p>|</p>
-                    <Link to="../newFile"><FiFilePlus/></Link>
+                    <Link to="../newFile"><FiFilePlus style={{marginTop: '2px'}}/></Link>
 
                 </div>
 
@@ -72,7 +77,7 @@ export default function Projects() {
 
             </div>      
 
-            <div className="item-one">
+            <div onClick={() => setIsModalVisible2(true) } className="item-one pointer">
 
                 <div className="icon">
 
@@ -89,7 +94,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-one">
+            <div className="item-one pointer">
 
                 <div className="icon">
 
@@ -106,7 +111,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-one-proj">
+            <div className="item-one-proj pointer">
 
                 <div className="icon">
 
@@ -128,7 +133,7 @@ export default function Projects() {
 
             </div> 
 
-            <div className="item-two">
+            <div className="item-two pointer">
 
                 <div className="arrow">
 
@@ -156,7 +161,7 @@ export default function Projects() {
 
             </div>               
             
-            <div className="item-three">
+            <div className="item-three pointer">
 
                 <div className="arrow">
 
@@ -178,7 +183,7 @@ export default function Projects() {
 
             </div>    
 
-            <div className="item-three">
+            <div className="item-three pointer">
 
                 <div className="arrow">
 
@@ -200,7 +205,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-three">
+            <div className="item-three pointer">
 
                 <div className="arrow">
 
@@ -222,7 +227,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-two">
+            <div className="item-two pointer">
 
                 <div className="arrow">
 
@@ -250,7 +255,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-two">
+            <div className="item-two pointer">
 
                 <div className="arrow">
 
@@ -278,7 +283,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-two">
+            <div className="item-two pointer">
 
                 <div className="arrow">
 
@@ -306,7 +311,7 @@ export default function Projects() {
 
             </div>
 
-            <div className="item-two">
+            <div className="item-two pointer">
 
                 <div className="arrow">
 
@@ -340,7 +345,7 @@ export default function Projects() {
 
             <div className="projects-actions">
 
-                <div className="selector">
+                <div className="selector pointer">
 
                     <p>Last modified</p>
                     <FiChevronDown />
@@ -349,13 +354,13 @@ export default function Projects() {
 
                 <div className="viewmode">
 
-                    <div className="view">
+                    <div className="view pointer">
 
                         <FiGrid />
 
                     </div>
 
-                    <div className="view">
+                    <div className="view pointer">
 
                         <FiMenu />
 
@@ -371,7 +376,7 @@ export default function Projects() {
 
                     <li>
 
-                        <div className="item">
+                        <div className="item pointer">
 
                             <div className="foto">
 
@@ -392,13 +397,13 @@ export default function Projects() {
 
                     <li>
 
-                        <div className="item">
+                        <div className="item pointer">
 
-                        <div className="foto">
+                            <div className="foto">
 
-                            <img src={Photo2} alt="Foto do Projeto" />
+                                <img src={Photo2} alt="Foto do Projeto" />
 
-                        </div>
+                            </div>
 
                             <div className="footer">
 
@@ -413,13 +418,13 @@ export default function Projects() {
 
                     <li>
 
-                        <div className="item">
+                        <div className="item pointer">
 
-                        <div className="foto">
+                            <div className="foto">
 
-                            <img src={Photo3} alt="Foto do Projeto" />
+                                <img src={Photo3} alt="Foto do Projeto" />
 
-                        </div>
+                            </div>
 
                             <div className="footer">
 
@@ -439,11 +444,15 @@ export default function Projects() {
 
         <div className="addfile">
 
-            <div className="circle">
+            <Link to="/newFile" style={{color:'white'}}>
 
-                <FiPlus />
+                <div className="circle">
 
-            </div>
+                    <FiPlus />
+
+                </div>
+
+            </Link>
 
         </div>
 

@@ -3,13 +3,25 @@ import { FiSearch } from 'react-icons/fi';
 
 import './style.css';
 
-export default function ShareFolder() {
+export default function Search({onCse= () => {}, id='modal'}) {
+
+    const handleOnClose = (e) => {
+
+        if(e.target.id === id) onCse();
+
+    }
 
     return (
     
-        <div className="center">
+        <div id={id} className="center" onClick={handleOnClose}>
 
-            <div className="share-container">
+            <div className="search-container">
+
+                <div className="close">
+
+                    <p onClick={onCse}>X</p>
+
+                </div>
 
                 <div className="title">
 

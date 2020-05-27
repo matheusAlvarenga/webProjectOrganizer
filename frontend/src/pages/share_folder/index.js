@@ -2,13 +2,25 @@ import React from 'react';
 
 import './style.css';
 
-export default function ShareFolder() {
+export default function ShareFolder({onCse= () => {}, id='modal'}) {
+
+    const handleOnClose = (e) => {
+
+        if(e.target.id === id) onCse();
+
+    }
 
     return (
     
-        <div className="center">
+        <div id={id} className="center" onClick={handleOnClose}>
 
             <div className="share-container">
+
+                <div className="close">
+
+                    <p onClick={onCse}>X</p>
+
+                </div>
 
                 <div className="title">
 

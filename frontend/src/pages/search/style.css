@@ -1,6 +1,14 @@
-.share-container {
+.center {
 
-    height: 160px;
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+}
+
+.search-container {
+
+    height: 180px;
     width: 420px;
 
     display: flex;
@@ -17,11 +25,11 @@
     left:50%;
     margin-left: -105px;
     top: 50%;
-    margin-top: -80px;
+    margin-top: -90px;
 
 }
 
-.share-container .title {
+.search-container .title {
 
     display: flex;
     align-items: center;
@@ -31,14 +39,14 @@
 
 }
 
-.share-container .title p + p{
+.search-container .title p + p{
 
     font-size: 28px;
     font-weight: 700;
 
 }
 
-.share-container .title p{
+.search-container .title p{
 
     font-size: 18px;
     font-weight: 400;
@@ -47,7 +55,7 @@
 
 }
 
-.share-container form {
+.search-container form {
 
     width: 80%;
     margin-top: 14px;
@@ -59,14 +67,14 @@
 
 }
 
-.share-container form input{
+.search-container form input{
 
     border-radius: 10px 0px 0px 10px;
     color: lightgrey;
 
 }
 
-.share-container form button{
+.search-container form button{
 
     width: 15%;
     display: flex;
@@ -77,8 +85,26 @@
 
 }
 
-.share-container form button svg{
+.search-container form button svg{
 
     font-size: 22px;
+
+}
+
+.search-container .close {
+
+    width: 100%;
+
+}
+
+.search-container .close p{
+
+    cursor: pointer;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
 
 }

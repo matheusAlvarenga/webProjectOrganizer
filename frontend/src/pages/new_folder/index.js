@@ -2,17 +2,23 @@ import React from 'react';
 
 import './style.css';
 
-export default function NewFolder(onClose= () => {}) {
+export default function NewFolder({onCse= () => {}, id='modal'}) {
+
+    const handleOnClose = (e) => {
+
+        if(e.target.id === id) onCse();
+
+    }
 
     return (
     
-        <div className="center">
+        <div id={id} className="center" onClick={handleOnClose}>
 
             <div className="folder-container">
 
                 <div className="close">
 
-                    <p onClick={() => onClose}>X</p>
+                    <p onClick={onCse}>X</p>
 
                 </div>
 
