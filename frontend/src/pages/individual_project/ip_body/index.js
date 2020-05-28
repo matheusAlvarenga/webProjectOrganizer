@@ -9,15 +9,15 @@ import AsideMenu from '../ip_menu';
 import './style.css';
 import logoWpo from '../../../assets/logo_wpo.svg';
 
-export default function Projects() {
+export default function Project() {
 
     return (
-    <div className="content">
+        <div className="content-projs">
 
-        <Header />
-        <AsideMenu />
+            <Header />
+            <AsideMenu />
 
-    </div>
+        </div>
     );    
 
 }

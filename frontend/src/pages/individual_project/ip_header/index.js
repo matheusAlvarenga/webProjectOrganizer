@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeftCircle, FiShare2, FiFolderPlus, FiFilePlus } from 'react-icons/fi';
+import { FiMenu, FiColumns, FiEdit, FiSave, FiMaximize2, FiFigma, FiGithub, FiShare2 } from 'react-icons/fi';
 
 import './style.css';
 
@@ -11,31 +11,38 @@ export default function Login() {
     return (
     <header className="header-container">
 
-        <div className="logo">
-            
-            <img src={logoWpo} alt="Logo Wpo" />
+        <div className="left">
+
+            <div>
+                <FiMenu />                
+            </div>
+            <div>
+                <FiColumns />            
+            </div>
+            <div>
+                <FiEdit />      
+            </div>
+            <div>
+                <FiSave />    
+            </div>
+            <div>
+                <FiMaximize2 />           
+            </div>
 
         </div>
-        
-        <div className="body">
 
-            <div className="title">
+        <div className="centro">
 
-                <FiArrowLeftCircle />
-                <p className="proj">Projects /</p>
-                <p className="folder">Projeto Para Fazer</p>
+            <p>Projetos Para Fazer /</p>
+            <p>GlassPlastic</p>
 
-            </div>
+        </div>
 
-            <div className="actions">
+        <div className="right">
 
-                <Link to="../shareFolder"><FiShare2/></Link>
-                <p>|</p>
-                <FiFolderPlus />
-                <p>|</p>
-                <Link to="../newFile"><FiFilePlus/></Link>
-
-            </div>
+            <FiFigma />
+            <FiGithub />
+            <FiShare2 />
 
         </div>
 

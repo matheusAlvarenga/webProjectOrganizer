@@ -1,9 +1,11 @@
-body{
+.content-projs{
 
     background: url('../../../assets/background-project-page.jpg');
-    background-size: 100%;
+    background-size: 115%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left top;
+
+    height: 100vh;
 
 }
 

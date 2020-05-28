@@ -16,7 +16,7 @@ import './aside_menu.css';
 export default function NewProject() {
 
     return (
-    <div className="content">
+    <div className="content-proj">
         <header className="header-container">
 
             <div className="logo">

@@ -12,7 +12,7 @@ import Photo3 from '../../assets/item-photo3.jpg';
 export default function Projects() {
 
     return (
-    <div className="content">
+    <div className="content-proj">
 
         <div className="sprojects-container">
 

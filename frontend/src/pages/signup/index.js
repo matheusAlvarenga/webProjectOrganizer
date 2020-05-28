@@ -8,7 +8,7 @@ import logoZan from '../../assets/logo_zanw.png';
 export default function Register() {
 
     return (
-    <div className="content">
+    <div className="content-login">
         <div id="login" className="login-container bg_353535">
                 <p>Create your account bellow</p>
 

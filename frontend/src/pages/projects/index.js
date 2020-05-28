@@ -25,7 +25,7 @@ export default function Projects() {
     const [isModalVisible3, setIsModalVisible3] = useState(false);
 
     return (
-    <div className="content">
+    <div className="content-proj">
 
         {isModalVisible ? <NewFolder onCse={ () => setIsModalVisible(false) } /> : null}
         {isModalVisible2 ? <Search onCse={ () => setIsModalVisible2(false) } /> : null}
@@ -55,7 +55,7 @@ export default function Projects() {
                     <p>|</p>
                     <FiFolderPlus className="pointer" onClick={() => setIsModalVisible(true) } />
                     <p>|</p>
-                    <Link to="../newFile"><FiFilePlus style={{marginTop: '2px'}}/></Link>
+                    <Link to="../new_project"><FiFilePlus style={{marginTop: '2px'}}/></Link>
 
                 </div>
 
@@ -444,7 +444,7 @@ export default function Projects() {
 
         <div className="addfile">
 
-            <Link to="/newFile" style={{color:'white'}}>
+            <Link to="/new_project" style={{color:'white'}}>
 
                 <div className="circle">
 

@@ -9,7 +9,7 @@ import logoZan from '../../assets/logo_zanw.png';
 export default function Login() {
 
     return (
-    <div className="content">
+    <div className="content-login">
         <div id="login" className="login-container bg_353535">
                 <p>Welcome to</p>
                 <img src={logoWpo} alt="Logo WebProject Organizer"/>
