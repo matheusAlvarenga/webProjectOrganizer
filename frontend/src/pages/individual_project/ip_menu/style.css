@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;700&display=swap');
 
-.menu-container {
+.ip-menu-container {
 
     position: fixed;
 
@@ -14,196 +14,481 @@
 
     background: #414141;
 
-}
-
-.menu-container .title {
-
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #353535;
+    overflow-y: scroll;
     
+    padding-bottom: 5%;
 
 }
 
-.menu-container .title .circle-mask {
+.ip-menu-container .title {
 
-    margin-left: 17px;
-    width: 25px;
-    height: 25px;
-    background: #FF009D;
-    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+
+    background: #212121;
+    
+    color: white;
+    font-size: 30px;
+
+    font-family: 'Teko', sans-serif;
     text-align: center;
 
 }
 
-.menu-container .title .circle-mask h1 {
+.ip-menu-container .sessionTitle{
+    width: 100%;
 
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    margin-right: 1px;
+    background: #353535;
 
-}
-
-.menu-container .title p {
-
-    margin-right: 17px;
     color: white;
     font-size: 17px;
+    font-weight: 700;
 
 }
 
-.menu-container .item-one {
+.ip-menu-container .sessionTitle div{
 
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    color: white;
-
-}
-
-.menu-container .item-one .icon {
-
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 3px;
-
-}
-
-.menu-container .item-one .text {
-
-    margin-left: 15px;
-    font-size: 14px;
-    vertical-align: middle;
-
-}
-
-.menu-container .item-one-proj {
-
-    width: 100%;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.ip-menu-container .viewMode:hover{
+
+    background: #313131;
+
+}
+
+.ip-menu-container .viewMode{
+
+    cursor: pointer;
+
+    width: 100%;
+
     color: white;
 
-}
-
-.menu-container .item-one-proj .icon {
-
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 3px;
-    flex: -2;
+    font-size: 16px;
 
 }
 
-.menu-container .item-one-proj .text {
+.ip-menu-container .viewMode div{
 
-    margin-left: 15px;
-    font-size: 14px;
-    vertical-align: middle;
-    flex: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
 
 }
 
-.menu-container .item-one-proj .minus {
+.ip-menu-container .viewMode div .left{
+
+    margin-left: 18px;
+
+}
+
+.ip-menu-container .viewMode div .left p{
+
+    font-size: 13px;
+
+    margin-left: 18px;
+
+}
+
+.ip-menu-container .viewMode div .right {
+
+    margin-right: 18px;;
+
+}
+
+.ip-menu-container .componentTitle:hover{
+
+    background: #313131;    
+
+}
+
+.ip-menu-container .componentTitle{
+    width: 100%;
 
     color: white;
-    font-size: 15px;
-    flex: 2;
-    margin-top: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
 
 }
 
-.menu-container .item-two {
+.ip-menu-container .componentTitle div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+
+}
+
+.ip-menu-container .componentTitle div .left{
+
+    margin-left: 18px;
+
+}
+
+.ip-menu-container .componentTitle div .left p{
+
+    font-size: 13px;
+
+    margin-left: 18px;
+
+}
+
+.ip-menu-container .componentTitle div .right {
+
+    margin-right: 18px;;
+
+}
+
+.ip-menu-container .page:hover{
+
+    background: rgb(32, 32, 32);
+
+}
+
+.ip-menu-container .page {
+
+    width: 100%;
 
     background: #2D2D2D;
-    width: 100%;
+
+    border-top: 1px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+    cursor: pointer;
+
+}
+
+.ip-menu-container .page+.page {
+
+    border-top: 0px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+}
+
+.ip-menu-container .page div{
+
     height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
 
-}
+    display: flex;
+    align-items: center;
 
-.menu-container .item-two .arrow {
-
-    font-size: 18px;
-    margin-left: 20px;
-    margin-top: 3px;
-    flex: -2;
+    font-size: 16px;
 
 }
 
-.menu-container .item-two .icon {
+.ip-menu-container .page div svg{
 
-    font-size: 18px;
+    margin-left: 23px;
+
+}
+
+.ip-menu-container .page div svg+svg{
+
+    margin-left: 14px;
+
+}
+
+.ip-menu-container .page div p{
+
     margin-left: 7px;
-    margin-top: 3px;
-    flex: -2;
 
-}
-
-.menu-container .item-two .text {
-
-    margin-left: 8px;
     font-size: 12px;
     vertical-align: middle;
-    flex: 10;
 
 }
 
-.menu-container .item-two .minus {
+.ip-menu-container .list:hover{
 
-    color: white;
-    font-size: 15px;
-    flex: 2.4;
-    margin-top: 5px;
+    background: rgb(32, 32, 32);
 
 }
 
-.menu-container .item-three {
+.ip-menu-container .list {
 
-    background: #212121;
     width: 100%;
+
+    background: #2D2D2D;
+
+    border-top: 1px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+    cursor: pointer;
+
+}
+
+.ip-menu-container .list+.list {
+
+    border-top: 0px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+}
+
+.ip-menu-container .list div{
+
     height: 30px;
+    color: white;
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    border-top: 1px solid #414141;
+
+    font-size: 16px;
 
 }
 
-.menu-container .item-three .arrow {
+.ip-menu-container .list div svg{
 
-    font-size: 18px;
-    margin-left: 50px;
-    margin-top: 3px;
-    flex: -2;
+    margin-left: 23px;
 
 }
 
-.menu-container .item-three .icon {
+.ip-menu-container .list div .mask-red{
 
-    font-size: 18px;
+    background-color: red;
+    width: 14px;
+    height: 14px;
+
+    border: 1px solid white;
+    border-radius: 3px;
+
+    margin-left: 14px;
+    margin-top: 0px;
+
+}
+
+.ip-menu-container .list div .mask-yellow{
+
+    background-color: yellow;
+    width: 14px;
+    height: 14px;
+
+    border: 1px solid white;
+    border-radius: 3px;
+
+    margin-left: 14px;
+    margin-top: 0px;
+
+}
+
+.ip-menu-container .list div .mask-green{
+
+    background-color: green;
+    width: 14px;
+    height: 14px;
+
+    border: 1px solid white;
+    border-radius: 3px;
+
+    margin-left: 14px;
+    margin-top: 0px;
+
+}
+
+.ip-menu-container .list div p{
+
     margin-left: 7px;
-    margin-top: 3px;
-    flex: -2;
+
+    font-size: 12px;
+    vertical-align: middle;
 
 }
 
-.menu-container .item-three .text {
+.ip-menu-container .table:hover{
 
-    margin-left: 8px;
-    font-size: 11px;
+    background: rgb(32, 32, 32);
+
+}
+
+.ip-menu-container .table {
+
+    width: 100%;
+
+    background: #2D2D2D;
+
+    border-top: 1px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+    cursor: pointer;
+
+}
+
+.ip-menu-container .table+.table {
+
+    border-top: 0px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+}
+
+.ip-menu-container .table div{
+
+    height: 30px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+
+}
+
+.ip-menu-container .table div svg{
+
+    margin-left: 23px;
+
+}
+
+.ip-menu-container .table div svg+svg{
+
+    margin-left: 14px;
+
+}
+
+.ip-menu-container .table div p{
+
+    margin-left: 7px;
+
+    font-size: 12px;
     vertical-align: middle;
-    flex: 10;
+
+}
+
+.ip-menu-container .function:hover{
+
+    background: rgb(32, 32, 32);
+
+}
+
+.ip-menu-container .function {
+
+    width: 100%;
+
+    background: #2D2D2D;
+
+    border-top: 1px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+    cursor: pointer;
+
+}
+
+.ip-menu-container .function+.function {
+
+    border-top: 0px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+}
+
+.ip-menu-container .function div{
+
+    height: 30px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+
+}
+
+.ip-menu-container .function div svg{
+
+    margin-left: 23px;
+
+}
+
+.ip-menu-container .function div svg+svg{
+
+    margin-left: 14px;
+
+}
+
+.ip-menu-container .function div p{
+
+    margin-left: 7px;
+
+    font-size: 12px;
+    vertical-align: middle;
+
+}
+
+.ip-menu-container .comments:hover{
+
+    background: rgb(32, 32, 32);
+
+}
+
+.ip-menu-container .comments {
+
+    width: 100%;
+
+    background: #2D2D2D;
+
+    border-top: 1px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+    cursor: pointer;
+
+}
+
+.ip-menu-container .comments+.comments {
+
+    border-top: 0px #212121 solid;
+    border-bottom: 1px #212121 solid;
+
+}
+
+.ip-menu-container .comments div{
+
+    height: 30px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+
+}
+
+.ip-menu-container .comments div svg{
+
+    margin-left: 23px;
+
+}
+
+.ip-menu-container .comments div .mask-circle{
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    margin-left: 14px;
+    margin-top: -1px;
+
+}
+
+.ip-menu-container .comments div .mask-circle p{
+
+    margin-left: 2px;
+    font-size: 8px;
+
+}
+
+.ip-menu-container .comments div p{
+
+    margin-left: 7px;
+
+    font-size: 12px;
+    vertical-align: middle;
 
 }

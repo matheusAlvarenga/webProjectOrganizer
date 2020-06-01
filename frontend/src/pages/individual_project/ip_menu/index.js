@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiSearch, FiClock, FiArchive, FiFolder, FiFile, FiCornerDownRight, FiPlus, FiMinus } from 'react-icons/fi';
+import { FiMap, FiSquare, FiXSquare, FiCheckSquare, FiDatabase, FiServer, FiSettings, FiCalendar, FiMessageCircle, FiZap, FiPlusSquare, FiMinusSquare, FiLayout, FiPieChart, FiCornerDownRight, FiLayers, FiTerminal } from 'react-icons/fi';
 
 
 import './style.css';
@@ -9,277 +9,508 @@ export default function Login() {
 
     return (
     
-        <div className="menu-container">
+        <div className="ip-menu-container">
 
             <div className="title">
 
-                <div className="circle-mask">
-
-                    <h1>M</h1>
-
-                </div>
-
-                <p>Matheus Alvarenga</p>
-
-            </div>      
-
-            <div className="item-one">
-
-                <div className="icon">
-
-                    <FiSearch />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Search</p>                   
-
-                </div>
-
+                <p>GlassPlastic</p>
 
             </div>
 
-            <div className="item-one">
+            <div className="sessionTitle">
 
-                <div className="icon">
-
-                    <FiClock />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Recents</p>                   
-
-                </div>
-
-
-            </div>
-
-            <div className="item-one-proj">
-
-                <div className="icon">
-
-                    <FiArchive />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Projects</p>                   
-
-                </div>
-
-                <div className="minus">
-
-                    <FiMinus />
-
-                </div>
-
-            </div> 
-
-            <div className="item-two">
-
-                <div className="arrow">
-
-                    <FiCornerDownRight />
-
-                </div>
-
-                <div className="icon">
-
-                    <FiFolder />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Projetos Para Fazer</p>                   
-
-                </div>
-
-                <div className="minus">
-
-                    <FiMinus />
-
-                </div>
-
-            </div>               
-            
-            <div className="item-three">
-
-                <div className="arrow">
-
-                    <FiCornerDownRight />
-
-                </div>
-
-                <div className="icon">
-
-                    <FiFile />
-
-                </div>
-
-                <div className="text">
-
-                    <p>GlassPlastic</p>                   
-
-                </div>
-
-            </div>    
-
-            <div className="item-three">
-
-                <div className="arrow">
-
-                    <FiCornerDownRight />
-
-                </div>
-
-                <div className="icon">
-
-                    <FiFile />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Oficina do Aluno</p>                   
+                <div>
+                
+                    <p>View Modes</p>
 
                 </div>
 
             </div>
 
-            <div className="item-three">
+            <div className="viewMode">
 
-                <div className="arrow">
+                <div>
 
-                    <FiCornerDownRight />
+                    <div className="left">
 
-                </div>
+                        <FiMap />
 
-                <div className="icon">
+                        <p>Site Map</p>
 
-                    <FiFile />
+                    </div>
+                    
+                    <div className="right">
 
-                </div>
+                        <FiXSquare /> 
 
-                <div className="text">
-
-                    <p>J.A Câmbios</p>                   
-
-                </div>
-
-            </div>
-
-            <div className="item-two">
-
-                <div className="arrow">
-
-                    <FiCornerDownRight />
-
-                </div>
-
-                <div className="icon">
-
-                    <FiFolder />
-
-                </div>
-
-                <div className="text">
-
-                    <p>Projetos Para Aprov...</p>                   
-
-                </div>
-
-                <div className="minus">
-
-                    <FiMinus />
+                    </div>   
 
                 </div>
 
             </div>
 
-            <div className="item-two">
+            <div className="viewMode">
 
-                <div className="arrow">
+                <div>
 
-                    <FiCornerDownRight />
+                    <div className="left">
 
-                </div>
+                        <FiCheckSquare />
 
-                <div className="icon">
+                        <p>To-Do-Lists</p>
 
-                    <FiFolder />
+                    </div>
+                    
+                    <div className="right">
 
-                </div>
+                        <FiSquare /> 
 
-                <div className="text">
-
-                    <p>Projetos Aprovados</p>                   
-
-                </div>
-
-                <div className="minus">
-
-                    <FiMinus />
+                    </div>   
 
                 </div>
 
             </div>
 
-            <div className="item-two">
+            <div className="viewMode">
 
-                <div className="arrow">
+                <div>
 
-                    <FiCornerDownRight />
+                    <div className="left">
 
-                </div>
+                        <FiDatabase />
 
-                <div className="icon">
+                        <p>Databases</p>
 
-                    <FiFolder />
+                    </div>
+                    
+                    <div className="right">
 
-                </div>
+                        <FiSquare /> 
 
-                <div className="text">
-
-                    <p>Projetos Finalizados</p>                   
-
-                </div>
-
-                <div className="minus">
-
-                    <FiMinus />
+                    </div>   
 
                 </div>
 
             </div>
 
-            <div className="item-two">
+            <div className="viewMode">
 
-                <div className="arrow">
+                <div>
+
+                    <div className="left">
+
+                        <FiServer />
+
+                        <p>Sections</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiSquare /> 
+
+                    </div>   
+
+                </div>
+
+            </div>
+
+            <div className="viewMode">
+
+                <div>
+
+                    <div className="left">
+
+                        <FiMessageCircle />
+
+                        <p>Comments</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiSquare /> 
+
+                    </div>   
+
+                </div>
+
+            </div>
+
+            <div className="viewMode">
+
+                <div>
+
+                    <div className="left">
+
+                        <FiMap />
+
+                        <p>Calendar</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiSquare /> 
+
+                    </div>   
+
+                </div>
+
+            </div>
+
+            <div className="viewMode">
+
+                <div>
+
+                    <div className="left">
+
+                        <FiZap />
+
+                        <p>Functions</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiSquare /> 
+
+                    </div>   
+
+                </div>
+
+            </div>
+
+            <div className="viewMode">
+
+                <div>
+
+                    <div className="left">
+
+                        <FiSettings />
+
+                        <p>Settings</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiSquare /> 
+
+                    </div>   
+
+                </div>
+
+            </div>
+
+            <div className="sessionTitle">
+
+                <div>
+                
+                    <p>Components</p>
+
+                </div>
+
+            </div>
+
+            <div className="componentTitle">
+
+                <div>
+
+                    <div className="left">
+
+                        <FiMap />
+
+                        <p>Pages</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiMinusSquare /> 
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="page">
+
+                <div>
+
+                <FiCornerDownRight />
+
+                <FiLayout /> 
+
+                <p>Sobre Nós</p>
+
+                </div>
+                
+            </div>
+
+            <div className="page">
+                
+                <div>
+
+                <FiCornerDownRight />
+
+                <FiPieChart /> 
+
+                <p>Cadastro</p>
+
+                </div>
+                
+            </div>
+
+            <div className="page">
+                
+                <div>
+
+                <FiCornerDownRight />
+
+                <FiLayout /> 
+
+                <p>Login</p>
+
+                </div>
+                
+            </div>
+
+            <div className="componentTitle">
+
+                <div>
+                    
+                    <div className="left">
+
+                        <FiCheckSquare />
+
+                        <p>To-Do-Lists</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiMinusSquare /> 
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="list">
+
+                <div>
+
+                <FiCornerDownRight />
+
+                <div className="mask-red">
+                </div>
+
+                <p>Pesquisar / Aprender</p>
+
+                </div>
+
+            </div>
+
+            <div className="list">
+
+                <div>
+
+                <FiCornerDownRight />
+
+                <div className="mask-yellow">
+                </div>
+
+                <p>UI Design no Figma</p>
+
+                </div>
+
+            </div>
+
+            <div className="list">
+
+                <div>
+
+                <FiCornerDownRight />
+
+                <div className="mask-green">
+                </div>
+
+                <p>Projetar Inicialmente</p>
+
+                </div>
+
+            </div>
+
+            <div className="componentTitle">
+
+                <div>
+                    
+                    <div className="left">
+
+                        <FiDatabase />
+
+                        <p>Tables</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiMinusSquare /> 
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="table">
+
+                <div>
 
                     <FiCornerDownRight />
 
-                </div>
+                    <FiLayers />
 
-                <div className="icon">
-
-                    <FiFolder />
+                    <p>Clientes</p>
 
                 </div>
 
-                <div className="text">
+            </div>
 
-                    <p>Projetos Não-Aprov...</p>                   
+            <div className="table">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <FiLayers />
+
+                    <p>Produtos</p>
 
                 </div>
 
-                <div className="minus">
+            </div>
 
-                    <FiMinus />
+            <div className="table">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <FiLayers />
+
+                    <p>Administrador</p>
+
+                </div>
+
+            </div>
+
+            <div className="componentTitle">
+
+                <div>
+                    
+                    <div className="left">
+
+                        <FiMessageCircle />
+
+                        <p>Comments</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiMinusSquare /> 
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="comments">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <div className="mask-circle">
+
+                        <p>03</p>
+
+                    </div>
+
+                    <p>Visitors</p>
+
+                </div>
+
+            </div>
+
+            <div className="comments">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <div className="mask-circle">
+
+                        <p>54</p>
+
+                    </div>
+
+                    <p>Owners</p>
+
+                </div>
+
+            </div>
+
+            <div className="componentTitle">
+
+                <div>
+                    
+                    <div className="left">
+
+                        <FiZap />
+
+                        <p>Functions</p>
+
+                    </div>
+                    
+                    <div className="right">
+
+                        <FiMinusSquare /> 
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="function">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <FiTerminal />
+
+                    <p>Login</p>
+
+                </div>
+
+            </div>
+
+            <div className="function">
+
+                <div>
+
+                    <FiCornerDownRight />
+
+                    <FiTerminal />
+
+                    <p>Cadastro</p>
 
                 </div>
 
