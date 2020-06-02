@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMap, FiSquare, FiXSquare, FiCheckSquare, FiDatabase, FiServer, FiSettings, FiCalendar, FiMessageCircle, FiZap, FiPlusSquare, FiMinusSquare, FiLayout, FiPieChart, FiCornerDownRight, FiLayers, FiTerminal } from 'react-icons/fi';
 
+import OpenPages from './open_pages';
+import ClosePages from './close_pages';
+import OpenLists from './open_lists';
+import CloseLists from './close_lists';
+import OpenTables from './open_table';
+import CloseTables from './close_table';
+import OpenComm from './open_comm';
+import CloseComm from './close_comm';
+import OpenFunc from './open_func';
+import CloseFunc from './close_func';
 
 import './style.css';
 
 export default function Login() {
+
+    const [isPage, setIsPage] = useState(false);
+    const [isList, setIsList] = useState(false);
+    const [isTable, setIsTable] = useState(false);
+    const [isComm, setIsComm] = useState(false);
+    const [isFunc, setIsFunc] = useState(false);
 
     return (
     
@@ -213,308 +229,15 @@ export default function Login() {
 
             </div>
 
-            <div className="componentTitle">
+            {isPage ? <OpenPages close={() => {setIsPage(false)}} /> : <ClosePages opn={() => {setIsPage(true)}} /> }
 
-                <div>
+            {isList ? <OpenLists close={() => {setIsList(false)}} /> : <CloseLists opn={() => {setIsList(true)}} /> }
 
-                    <div className="left">
+            {isTable ? <OpenTables close={() => {setIsTable(false)}} /> : <CloseTables opn={() => {setIsTable(true)}} /> }
 
-                        <FiMap />
+            {isComm ? <OpenComm close={() => {setIsComm(false)}} /> : <CloseComm opn={() => {setIsComm(true)}} /> }
 
-                        <p>Pages</p>
-
-                    </div>
-                    
-                    <div className="right">
-
-                        <FiMinusSquare /> 
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="page">
-
-                <div>
-
-                <FiCornerDownRight />
-
-                <FiLayout /> 
-
-                <p>Sobre Nós</p>
-
-                </div>
-                
-            </div>
-
-            <div className="page">
-                
-                <div>
-
-                <FiCornerDownRight />
-
-                <FiPieChart /> 
-
-                <p>Cadastro</p>
-
-                </div>
-                
-            </div>
-
-            <div className="page">
-                
-                <div>
-
-                <FiCornerDownRight />
-
-                <FiLayout /> 
-
-                <p>Login</p>
-
-                </div>
-                
-            </div>
-
-            <div className="componentTitle">
-
-                <div>
-                    
-                    <div className="left">
-
-                        <FiCheckSquare />
-
-                        <p>To-Do-Lists</p>
-
-                    </div>
-                    
-                    <div className="right">
-
-                        <FiMinusSquare /> 
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="list">
-
-                <div>
-
-                <FiCornerDownRight />
-
-                <div className="mask-red">
-                </div>
-
-                <p>Pesquisar / Aprender</p>
-
-                </div>
-
-            </div>
-
-            <div className="list">
-
-                <div>
-
-                <FiCornerDownRight />
-
-                <div className="mask-yellow">
-                </div>
-
-                <p>UI Design no Figma</p>
-
-                </div>
-
-            </div>
-
-            <div className="list">
-
-                <div>
-
-                <FiCornerDownRight />
-
-                <div className="mask-green">
-                </div>
-
-                <p>Projetar Inicialmente</p>
-
-                </div>
-
-            </div>
-
-            <div className="componentTitle">
-
-                <div>
-                    
-                    <div className="left">
-
-                        <FiDatabase />
-
-                        <p>Tables</p>
-
-                    </div>
-                    
-                    <div className="right">
-
-                        <FiMinusSquare /> 
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="table">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <FiLayers />
-
-                    <p>Clientes</p>
-
-                </div>
-
-            </div>
-
-            <div className="table">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <FiLayers />
-
-                    <p>Produtos</p>
-
-                </div>
-
-            </div>
-
-            <div className="table">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <FiLayers />
-
-                    <p>Administrador</p>
-
-                </div>
-
-            </div>
-
-            <div className="componentTitle">
-
-                <div>
-                    
-                    <div className="left">
-
-                        <FiMessageCircle />
-
-                        <p>Comments</p>
-
-                    </div>
-                    
-                    <div className="right">
-
-                        <FiMinusSquare /> 
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="comments">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <div className="mask-circle">
-
-                        <p>03</p>
-
-                    </div>
-
-                    <p>Visitors</p>
-
-                </div>
-
-            </div>
-
-            <div className="comments">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <div className="mask-circle">
-
-                        <p>54</p>
-
-                    </div>
-
-                    <p>Owners</p>
-
-                </div>
-
-            </div>
-
-            <div className="componentTitle">
-
-                <div>
-                    
-                    <div className="left">
-
-                        <FiZap />
-
-                        <p>Functions</p>
-
-                    </div>
-                    
-                    <div className="right">
-
-                        <FiMinusSquare /> 
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="function">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <FiTerminal />
-
-                    <p>Login</p>
-
-                </div>
-
-            </div>
-
-            <div className="function">
-
-                <div>
-
-                    <FiCornerDownRight />
-
-                    <FiTerminal />
-
-                    <p>Cadastro</p>
-
-                </div>
-
-            </div>
+            {isFunc ? <OpenFunc close={() => {setIsFunc(false)}} /> : <CloseFunc opn={() => {setIsFunc(true)}} /> }
 
         </div>
 
