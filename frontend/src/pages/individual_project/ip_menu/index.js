@@ -13,9 +13,13 @@ import CloseComm from './close_comm';
 import OpenFunc from './open_func';
 import CloseFunc from './close_func';
 
-import './style.css';
+import WithX from './withx';
+import WithoutX from './withoutx';
 
-export default function Login() {
+import './style.css';
+import with_x from './withx';
+
+export default function Login({select=1,list=()=>{},site=()=>{},data=()=>{},sect=()=>{},comm=()=>{},cale=()=>{},func=()=>{},sett=()=>{}}) {
 
     const [isPage, setIsPage] = useState(false);
     const [isList, setIsList] = useState(false);
@@ -43,7 +47,7 @@ export default function Login() {
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={list} className="viewMode">
 
                 <div>
 
@@ -55,17 +59,13 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiXSquare /> 
-
-                    </div>   
+                    { select == 1 ? <WithX /> : <WithoutX /> } 
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={site} className="viewMode">
 
                 <div>
 
@@ -77,17 +77,13 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiSquare /> 
-
-                    </div>   
+                    { select == 2 ? <WithX /> : <WithoutX /> }  
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={data} className="viewMode">
 
                 <div>
 
@@ -99,17 +95,13 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiSquare /> 
-
-                    </div>   
+                    { select == 3 ? <WithX /> : <WithoutX /> }  
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={sect} className="viewMode">
 
                 <div>
 
@@ -121,17 +113,14 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
+                    { select == 4 ? <WithX /> : <WithoutX /> }  
 
-                        <FiSquare /> 
-
-                    </div>   
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={comm} className="viewMode">
 
                 <div>
 
@@ -143,17 +132,14 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
+                    { select == 5 ? <WithX /> : <WithoutX /> } 
 
-                        <FiSquare /> 
-
-                    </div>   
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={cale} className="viewMode">
 
                 <div>
 
@@ -165,17 +151,14 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiSquare /> 
-
-                    </div>   
+                    { select == 6 ? <WithX /> : <WithoutX /> } 
+  
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={func} className="viewMode">
 
                 <div>
 
@@ -187,17 +170,14 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiSquare /> 
-
-                    </div>   
+                    { select == 7 ? <WithX /> : <WithoutX /> }  
+  
 
                 </div>
 
             </div>
 
-            <div className="viewMode">
+            <div onClick={sett} className="viewMode">
 
                 <div>
 
@@ -209,11 +189,8 @@ export default function Login() {
 
                     </div>
                     
-                    <div className="right">
-
-                        <FiSquare /> 
-
-                    </div>   
+                    { select == 8 ? <WithX /> : <WithoutX /> } 
+ 
 
                 </div>
 
