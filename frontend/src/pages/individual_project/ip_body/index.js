@@ -20,7 +20,7 @@ import logoWpo from '../../../assets/logo_wpo.svg';
 
 export default function Project() {
 
-    const [selected, setSelected] = useState(1);
+    const [selected, setSelected] = useState(2);
 
     return (
         <div className="content-projs">
