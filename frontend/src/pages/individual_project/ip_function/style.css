@@ -1,69 +1,228 @@
-.header-container{
+.function_container {
 
-    position: fixed;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 
-    width: 100%;
-    height: 60px;
+}
+
+.function_container .header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.function_container .header .left .title {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.function_container .header .left .title svg {
+
+    font-size: 45px;
+
+    color: white;
+
+    border-radius: 50px;
+
+}
+
+.function_container .header .left .title p {
+
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+
+    margin-left: 15px;
+
+}
+
+.function_container .header .left .title p + p{
+
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+.function_container .header .right .actions svg {
+
+    color: white;
+    font-size: 26px;
+    margin-top: 15px;
+
+    cursor: pointer;
+
+}
+
+.function_container .opt-list {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.function_container .opt-list .left {
 
     display: flex;
     align-items: center;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.function_container .opt-list .left p {
+
+    margin-left: 6px;
+    margin-right: 6px;
+
+    font-size: 14px;
+
+}
+
+.function_container .opt-list .left svg {
+
+    font-size: 15px;
+
+}
+
+.function_container .opt-list .left .chv {
+
+    margin-top: 5px;
+
+}
+
+.function_container .opt-list .right {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.function_container .opt-list .right .head-item {
+
+    display: flex;
+    margin-left: 15px;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.function_container .opt-list .right .head-item svg {
+
+    font-size: 16px;
+
+}
+
+.function_container .opt-list .right .head-item p {
+
+    margin-left: 5px;
+
+    font-size: 14px;
+
+}
+
+.function_container .list .item {
+
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    background: #353535;
-    border: 1px solid #000000;
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
 
 }
 
-.header-container .left {
-
-    margin-left: 30px;
+.function_container .list .item .left {
 
     display: flex;
-
-}
-
-.header-container .left svg{
-
-    margin-right: 30px;
-    font-size: 27px;
+    align-items: center;
+    
     color: white;
 
 }
 
-.header-container .right {
+.function_container .list .item .left svg {
 
-    margin-right: 30px;
+    font-size: 16px;
+    margin-top: 2px;
 
-}
-
-.header-container .right svg{
-
-    margin-left: 30px;
-    font-size: 27px;
-    color: white;
+    cursor: pointer;
 
 }
 
-.header-container .centro {
+.function_container .list .item .left p {
 
-    text-align: center;
-
-    display: flex;
-    align-items: baseline;
-
-}
-
-.header-container .centro p{
-
-    color: white;
-    font-size: 20px;
-
-}
-
-.header-container .centro p + p{
-
-    font-size: 24px;
     font-weight: bold;
-    margin-left: 10px;
+    font-size: 14px;
+    margin-left: 12px;
+
+}
+
+.function_container .list .item .right {
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+}
+
+.function_container .list .item .right p {
+
+    margin-left: 15px;
+    font-size: 13px;
+
+}
+
+.function_container .list .item .right p span {
+
+    text-decoration: underline;
+    line-height: 21px;
+
+}
+
+.function_container .list .item .right svg {
+
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+
+.function_container .sub-list {
+
+    background: #2D2D2D;
+
+    padding: 11px 23px;
+
+    color: white;
+
+}
+
+.function_container .sub-list .desc {
+
+    padding-bottom: 10px;
+
+    font-size: 13.9023px;
+    line-height: 25px;
+    text-align: justify;
+
+    color: #ACACAC;
 
 }
