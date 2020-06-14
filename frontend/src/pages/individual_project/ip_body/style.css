@@ -4,6 +4,7 @@
     background-size: 115%;
     background-repeat: no-repeat;
     background-position: left top;
+    background-attachment: fixed;
 
     height: 100vh;
 
@@ -173,7 +174,9 @@
     margin-left: 23.3%;
 
     width: 70%;
-    min-height: 80%;
+    height: 80vh;
+
+    overflow-y: scroll;
 
     background: #212121;
     border: 5px solid #0C0C0C;

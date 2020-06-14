@@ -1,69 +1,101 @@
-.header-container{
+.comments_container {
 
-    position: fixed;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.comments_container .header {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.comments_container .header .middle p {
+
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+
+    margin-left: 15px;
+
+}
+
+.comments_container .list .item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #0D0D0D;
+
+}
+
+.comments_container .list .item .title {
 
     width: 100%;
-    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+
+    margin-bottom: 5px;
+
+}
+
+.comments_container .list .item .title .left {
+
+    display: flex;
+
+}
+
+.comments_container .list .item .title .left p {
+
+    font-size: 25px;
+
+}
+
+.comments_container .list .item .title .left p + p {
+
+    font-size: 18px;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.comments_container .list .item .title .right {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    background: #353535;
-    border: 1px solid #000000;
+    margin-top: 8px;
 
 }
 
-.header-container .left {
+.comments_container .list .item .title .right svg {
 
-    margin-left: 30px;
-
-    display: flex;
-
-}
-
-.header-container .left svg{
-
-    margin-right: 30px;
-    font-size: 27px;
-    color: white;
+    margin-left: 6px;
+    font-size: 18px;
 
 }
 
-.header-container .right {
+.comments_container .list .item .desc {
 
-    margin-right: 30px;
+    padding-bottom: 10px;
 
-}
+    font-size: 13.9023px;
+    line-height: 25px;
+    text-align: justify;
 
-.header-container .right svg{
-
-    margin-left: 30px;
-    font-size: 27px;
-    color: white;
-
-}
-
-.header-container .centro {
-
-    text-align: center;
-
-    display: flex;
-    align-items: baseline;
-
-}
-
-.header-container .centro p{
-
-    color: white;
-    font-size: 20px;
-
-}
-
-.header-container .centro p + p{
-
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
+    color: #ACACAC;
 
 }
