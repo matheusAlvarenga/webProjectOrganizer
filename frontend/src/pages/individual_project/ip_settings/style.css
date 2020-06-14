@@ -1,69 +1,118 @@
-.header-container{
+.settings_container {
 
-    position: fixed;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 
-    width: 100%;
-    height: 60px;
+}
+
+.settings_container .header {
 
     display: flex;
     align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+.settings_container .header p {
+
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+
+}
+
+.settings_container .header svg {
+
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    margin-right: 10px;
+
+}
+
+.settings_container .list .item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #0D0D0D;
+    border-top: 1px solid #0D0D0D;
+
+}
+
+.settings_container .list .item + .item{
+
+    border-bottom: 1px solid #0D0D0D;
+    border-top: 0px solid #0D0D0D;
+
+}
+
+.settings_container .list .item .title {
+
+    width: 100%;
+
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    background: #353535;
-    border: 1px solid #000000;
+    color: white;
+
+    margin-bottom: 5px;
 
 }
 
-.header-container .left {
-
-    margin-left: 30px;
+.settings_container .list .item .title .left {
 
     display: flex;
 
-}
-
-.header-container .left svg{
-
-    margin-right: 30px;
-    font-size: 27px;
-    color: white;
+    align-items: center;
 
 }
 
-.header-container .right {
+.settings_container .list .item .title .left p {
 
-    margin-right: 30px;
-
-}
-
-.header-container .right svg{
-
-    margin-left: 30px;
-    font-size: 27px;
-    color: white;
-
-}
-
-.header-container .centro {
-
-    text-align: center;
-
-    display: flex;
-    align-items: baseline;
-
-}
-
-.header-container .centro p{
-
-    color: white;
     font-size: 20px;
 
+    margin-left: 20px;
+
 }
 
-.header-container .centro p + p{
+.settings_container .list .item .title .left p + p {
 
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
+    font-size: 14px;
+
+    margin-left: 6px;
+    margin-top: 7px;
+
+    text-align: justify;
+
+    margin-right: 30px;
+    line-height: 21px;
+
+}
+
+.settings_container .list .item .title .right {
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 8px;
+
+}
+
+.settings_container .list .item .title .right svg {
+
+    margin-left: 6px;
+    margin-right: 20px;
+    margin-top: -6px;
+    font-size: 18px;
+
+    cursor: pointer;
 
 }
